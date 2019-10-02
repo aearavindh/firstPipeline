@@ -13,14 +13,7 @@ pipeline{
          }
          stage('Three'){
             steps{
-               when{
-                   not{
-                      branch "master"
-                   }
-               }
-               steps{
-                  echo "Hello"
-               }
+               echo 'Hello'
             }
          }
          stage('Four'){
